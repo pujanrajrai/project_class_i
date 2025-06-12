@@ -2,6 +2,9 @@ from student_management import (
     add_student, update_student,
     view_student, delete_student
 )
+from attendance_management import (
+    take_attendance
+)
 
 
 def menu():
@@ -25,6 +28,8 @@ while True:
         delete_student()
     elif option == "4":
         view_student()
+    elif option == "5":
+        take_attendance()
     elif option == "7":
         print("Exit")
         break
