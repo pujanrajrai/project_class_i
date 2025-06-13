@@ -3,7 +3,8 @@ from student_management import (
     view_student, delete_student
 )
 from attendance_management import (
-    take_attendance
+    take_attendance,
+    view_attendance
 )
 
 
@@ -30,6 +31,8 @@ while True:
         view_student()
     elif option == "5":
         take_attendance()
+    elif option == "6":
+        view_attendance()
     elif option == "7":
         print("Exit")
         break
